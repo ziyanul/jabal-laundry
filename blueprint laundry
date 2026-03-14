@@ -1,0 +1,59 @@
+laundry-app/
+├── app/
+│   ├── Models/
+│   │   ├── User.php
+│   │   ├── Customer.php
+│   │   ├── Outlet.php
+│   │   ├── Order.php
+│   │   ├── OrderItem.php
+│   │   ├── Shift.php
+│   │   ├── Delivery.php
+│   │   └── Payment.php
+│   ├── Http/Controllers/
+│   │   ├── AuthController.php
+│   │   ├── CustomerController.php
+│   │   ├── OrderController.php
+│   │   ├── OutletController.php
+│   │   ├── ShiftController.php
+│   │   ├── DeliveryController.php
+│   │   └── PaymentController.php
+├── database/
+│   ├── migrations/
+│   │   ├── create_users_table.php
+│   │   ├── create_customers_table.php
+│   │   ├── create_outlets_table.php
+│   │   ├── create_orders_table.php
+│   │   ├── create_order_items_table.php
+│   │   ├── create_shifts_table.php
+│   │   ├── create_deliveries_table.php
+│   │   └── create_payments_table.php
+├── routes/
+│   └── web.php
+├── resources/views/
+│   ├── auth/
+│   │   └── login.blade.php
+│   ├── customers/
+│   │   └── index.blade.php
+│   ├── orders/
+│   │   └── index.blade.php
+│   └── layouts/
+│       └── app.blade.php
+└── composer.json
+
+
+🔵 STEP 1 — Konsep Sistem (BIAR JELAS ARAH)
+Role User (minimal)
+
+Admin
+
+Kasir
+
+Produksi
+
+Status Order Laundry
+MASUK
+CUCI
+KERING
+SETRIKA
+SIAP AMBIL
+SELESAI
